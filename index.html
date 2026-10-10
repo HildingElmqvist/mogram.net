@@ -3,45 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mogram AB</title>
-  <meta name="description" content="Mogram AB is a software company in Lund, Sweden focused on modeling and simulation software.">
+  <title>Mogram AB – Modeling and simulation software</title>
+  <meta name="description" content="Mogram AB is a software company in Lund, Sweden. We build Modelica modeling and simulation tools that run in your browser.">
+  <meta name="theme-color" content="#2f6fc4">
   <link rel="canonical" href="https://www.mogram.net/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="wrapper"><a href="/">Mogram AB</a></div>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand"><img src="mogramlogo.jpg" alt="Mogram" width="1764" height="390"></a>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrapper">
-    <h1>Home</h1>
-    <div class="columns">
-      <div>
-        <p>Mogram AB is a software company in Lund, Sweden founded in January 2016. The focus is software for modeling and simulation.</p>
-        <p>Current activities include designing and implementing a Modelica translator and simulator running in your browser. There are two web apps:</p>
-        <ul>
-          <li>Modelica Instant Simulator: <a href="https://modiator.com">modiator.com</a></li>
-          <li>Modelica Instant Calculator: <a href="https://modicalc.com">modicalc.com</a></li>
-        </ul>
-        <p>CEO of Mogram is Dr Hilding Elmqvist.</p>
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Modeling &amp; simulation software</p>
+        <h1>Modelica simulation,<br><span>right in your browser.</span></h1>
+        <p class="lead">Mogram designs and implements a Modelica translator and simulator that runs entirely in the browser. No installation required.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://modiator.com">Try Modiator</a>
+          <a class="btn" href="https://modicalc.com">Try Modicalc</a>
+        </div>
       </div>
-      <div>
-        <img src="mogramlogo.jpg" alt="Mogram logo" width="1764" height="390">
+    </section>
+
+    <section id="products" class="section">
+      <div class="container">
+        <h2>Products</h2>
+        <div class="cards">
+          <a class="card" href="https://modiator.com">
+            <span class="tag">Web app</span>
+            <h3>Modelica Instant Simulator</h3>
+            <p>Write, translate and simulate Modelica models instantly in your browser.</p>
+            <span class="more">modiator.com →</span>
+          </a>
+          <a class="card" href="https://modicalc.com">
+            <span class="tag">Web app</span>
+            <h3>Modelica Instant Calculator</h3>
+            <p>Use Modelica as a live calculator for equations and engineering calculations.</p>
+            <span class="more">modicalc.com →</span>
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container about">
+        <div>
+          <h2>About Mogram</h2>
+          <p>Mogram AB is a software company in Lund, Sweden, founded in January 2016. Our focus is software for modeling and simulation.</p>
+          <p>Mogram is led by CEO Dr Hilding Elmqvist.</p>
+        </div>
+        <div class="facts">
+          <div><strong>2016</strong><span>Founded</span></div>
+          <div><strong>Lund</strong><span>Sweden</span></div>
+          <div><strong>Modelica</strong><span>Our focus</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div>
+          <h2>Contact</h2>
+          <p><a href="mailto:Hilding.Elmqvist@Mogram.net">Hilding.Elmqvist@Mogram.net</a></p>
+        </div>
+        <address>
+          <strong>Mogram AB</strong><br>
+          Magle Lilla Kyrkogata 24<br>
+          223 51 Lund<br>
+          Sverige
+        </address>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="wrapper columns">
-      <div>
-        <h3>Address</h3>
-        <p>Magle Lilla Kyrkogata 24<br>223 51 Lund<br>Sverige</p>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <p><a href="mailto:Hilding.Elmqvist@Mogram.net">Hilding.Elmqvist@Mogram.net</a></p>
-      </div>
-    </div>
+  <footer class="footer">
+    <div class="container">© 2016–<span id="year">2026</span> Mogram AB</div>
   </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
